@@ -42,6 +42,7 @@
     .btn-primary-modern:hover {
       transform: translateY(-2px);
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      color: white !important;
     }
 
     .btn-outline-modern {
@@ -72,13 +73,21 @@
       color: #6c757d;
     }
 
-    .hero-img {
+    /* .hero-img {
       max-height: 70vh;
       object-fit: cover;
       border-radius: 12px;
       transition: transform 0.3s ease;
-    }
+    } */
 
+        .hero-img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+        }
     .hero-img:hover {
       transform: scale(1.05);
     }
@@ -122,7 +131,7 @@
           <p class="m-0 small">Research Portal</p>
         </div>
       </a>
-      <button class="btn btn-primary-modern rounded-pill px-4 py-2 fw-semibold d-none d-md-inline-flex">Staff
+      <button class="btn btn-primary-modern rounded-pill px-4 py-2 fw-semibold d-none d-md-inline-flex" style="color: white;">Staff
         Login</button>
       <button class="btn btn-primary-modern rounded-pill px-4 py-2 fw-semibold d-inline-flex d-md-none"
         style="font-size: 12px;">Staff Login</button>
@@ -139,7 +148,7 @@
           <p class="lead">Join a community of researchers and innovators pushing the boundaries of science, technology,
             and discovery.</p>
           <div class="d-flex gap-3 flex-wrap mt-4">
-            <a href="#explore" class="btn btn-primary-modern btn-lg rounded-pill px-4 shadow-sm">Explore Research</a>
+            <a href="#explore" class="btn btn-primary-modern btn-lg rounded-pill px-4 shadow-sm"style="color: white;">Explore Research</a>
             <a href="#learn" class="btn btn-outline-modern btn-lg rounded-pill px-4 shadow-sm">Learn More</a>
           </div>
         </div>
