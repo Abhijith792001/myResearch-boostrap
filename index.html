@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <nav class="navbar bg-body-tertiary">
+  <nav class="navbar">
     <div class="container d-flex justify-content-between align-items-center">
       <a class="navbar-brand d-flex align-items-center gap-2" href="#">
         <img src="assets/logo.png" class="d-none d-md-inline-block" alt="Logo" height="40" class="d-inline-block">
@@ -24,20 +24,42 @@
         </div>
       </a>
       <!-- Visible on medium and larger devices (≥768px) -->
-      <button class="btn  shadow-sm rounded-pill d-none d-md-inline-block px-4 fw-semibold border-none"
-        style="background-color: #edd0d9; color: #a4123f;">
-        <i data-lucide="log-out" class="icon-small mb-1"></i>
+      <button
+        class="btn shadow-sm rounded-pill d-none d-md-inline-flex align-items-center gap-2 px-4 py-2 fw-semibold border-0"
+        style="background: linear-gradient(135deg, #a4123f); color: white; transition: all 0.3s ease;">
+        <!-- <i data-lucide="log-in" class="icon-small"></i> -->
         Staff Login
       </button>
-
-      <!-- Visible only on small devices (<768px) -->
-      <button class="btn btn-primary rounded-pill d-inline-block d-md-none px-3 fw-semibold"
-        style="font-size: 10px; background-color: #edd0d9;">
+      <button
+        class="btn shadow-sm rounded-pill d-inline-block d-md-none align-items-center gap-2 px-4 py-2 fw-semibold border-0"
+        style="background: linear-gradient(135deg, #a4123f); font-size: 11px; color: white; transition: all 0.3s ease;">
+        <!-- <i data-lucide="log-in" style="height: 0.8rem;" class="icon-small"></i> -->
         Staff Login
       </button>
-
     </div>
   </nav>
+<section class="container">
+  <div class="row align-items-center">
+    <!-- Left side -->
+    <div class="col-md-6 col-12">
+      <h1 class="pt-4">Advancing Knowledge Through Research</h1>
+      <p>Join our community of researchers and scholars dedicated to pushing the boundaries of innovation and discovery.</p>
+      <div class="d-flex gap-2">
+        <button class="btn btn-primary rounded-pill">
+          Explore Research
+        </button>
+        <button class="btn btn-outline-primary rounded-pill">
+          Explore Research
+        </button>
+      </div>
+    </div>
+
+    <!-- Right side -->
+    <div class="col-md-6 col-12 text-center">
+      <img src="assets/home1.png" alt="" class="img-fluid">
+    </div>
+  </div>
+</section>
 
 
 

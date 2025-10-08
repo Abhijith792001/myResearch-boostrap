@@ -64,3 +64,13 @@
       width: 16px;
       height: 16px;
     }
+
+  button.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(164, 18, 63, 0.25);
+  }
+
+  button.btn:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 6px rgba(164, 18, 63, 0.2);
+  }
