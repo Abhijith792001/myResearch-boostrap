@@ -8,10 +8,15 @@
   <link rel="stylesheet" href="bootstrap-5.3.8/css/bootstrap.min.css">
   <link rel="shortcut icon" href="assets/favicon-.ico">
   <link rel="stylesheet" href="css/style.css">
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- <script src="https://unpkg.com/lucide@latest"></script> -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lucide-static@latest/font/lucide.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
   <style>
     body {
-      font-family: 'Poppins', Helvetica, Arial, Lucida, sans-serif;
+    font-family: 'Poppins', Helvetica, Arial, Lucida, sans-serif;
+
+      font-family: 'Montserrat', sans-serif;
       font-size: 14px;
       color: rgba(0, 0, 0, 0.6);
       background-color: #ffffff;
@@ -65,12 +70,12 @@
 
     /* Hero Section */
     .hero-section {
-      padding: 6rem 0;
+      padding: 4rem 0;
       position: relative;
     }
 
     .hero-section h1 {
-      font-size: 2.75rem;
+      font-size: 3rem;
       line-height: 1.2;
       font-weight: 700;
     }
@@ -107,7 +112,7 @@
       opacity: 0.1;
       z-index: 0;
     }
-
+/* 
     .shape-top {
       top: -20px;
       left: 50%;
@@ -115,7 +120,7 @@
       height: 60px;
       background-color: #a4123f;
       transform: translateX(-50%);
-    }
+    } */
 
     .shape-bottom {
       bottom: 20px;
@@ -124,12 +129,70 @@
       height: 100px;
       background-color: #f1c40f;
     }
+
+    .my-element {
+      color: #444444;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 19px;
+      font-weight: 600;
+    }
+    .headertext{
+       font-family: 'Poppins', Helvetica, Arial, Lucida, sans-serif !important;
+    }
+    /* Left-side floating shapes */
+.floating-shape-left {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.1;
+  z-index: 0;
+  animation: float 6s ease-in-out infinite alternate;
+}
+
+.shape-left-top {
+  top: 10%;
+  left: 300px; /* start slightly outside left */
+  width: 80px;
+  height: 80px;
+  background-color: #a4123f;
+}
+
+.shape-left-bottom {
+  bottom: 10%;
+  left: -70px;
+  width: 300px;
+  height: 300px;
+  background-color: #f1c40f;
+}
+
+/* Simple floating animation */
+/* @keyframes float {
+  0% { transform: translateY(0) translateX(0); }
+  50% { transform: translateY(-20px) translateX(10px); }
+  100% { transform: translateY(0) translateX(0); }
+} */
+
   </style>
 </head>
 
 <body>
+  <nav class="bg-primary d-none d-md-flex" style="background: linear-gradient(135deg, #a4123f, #d2135a);">
+    <div class="container d-flex justify-content-between align-items-center">
+      <ul class="nav gap-2 text-white">
+        <li class="nav-item"><a href="#" class="nav-link text-white">INTERNATIONAL</a></li>
+        <li class="nav-item"><a href="#" class="nav-link text-white">ALUMNI</a></li>
+        <li class="nav-item"><a href="#" class="nav-link text-white">FACULTY</a></li>
+        <li class="nav-item"><a href="#" class="nav-link text-white">SCHOOLS</a></li>
+        <li class="nav-item"><a href="#" class="nav-link text-white">CAMPUS LIFE</a></li>
+      </ul>
+      <button class="text-black rounded-pill  px-4 d-flex align-items-center justify-content-center"
+        style="background-color: #fac52d;   font-size: 14px; height: 27px; border: none;">
+        Admissions
+      </button>
+    </div>
+  </nav>
+
   <!-- Navbar -->
-  <nav class="navbar">
+  <nav class="navbar navbar-expand-md">
     <div class="container d-flex justify-content-between align-items-center">
       <a class="navbar-brand d-flex align-items-center gap-2" href="#">
         <img src="assets/logo.png" class="d-none d-md-inline-block" alt="Logo" height="40">
@@ -139,12 +202,33 @@
           <p class="m-0 small">Research Portal</p>
         </div>
       </a>
-      <button class="btn btn-primary-modern rounded-pill px-4 py-2  d-none d-md-inline-flex" style="color: white;">Staff
-        Login</button>
-      <button class="btn btn-primary-modern rounded-pill px-4 py-2 fw-semibold d-inline-flex d-md-none"
+
+      <!-- Toggler -->
+      <button class="navbar-toggler" style="border: none;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+         <!-- <i data-lucid="text-align-end "></i> -->
+      </button>
+
+      <!-- Collapsible Menu -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav  ms-auto me-4 my-element">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Campus</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Research</a></li>
+          
+        </ul>
+              <button class="btn btn-primary-modern rounded-pill px-4 py-2 fw-semibold d-inline-flex d-md-none"
         style="font-size: 12px;">Staff Login</button>
+      </div>
+
+      <button class="btn btn-primary-modern rounded-pill px-4 py-2 d-none d-md-inline-flex text-white">Staff
+        Login</button>
+
     </div>
   </nav>
+
 
   <!-- Hero Section -->
   <section class="hero-section">
@@ -152,7 +236,7 @@
       <div class="row align-items-center">
         <!-- Left: Text -->
         <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
-          <h1 class="fs-1 fs-sm-6 fs-md-1">
+          <h1 class="fs-1 fs-sm-6 fs-md-1 headertext" >
             Advancing Knowledge <br>
             <span class="text-primary">Through Research</span>
           </h1>
@@ -162,7 +246,10 @@
             <a href="#explore" class="btn btn-primary-modern btn-lg rounded-pill px-4 shadow-sm"
               style="color: white;">Explore Research</a>
             <a href="#learn" class="btn btn-outline-modern btn-lg rounded-pill px-4 shadow-sm">Learn More</a>
+             <span class="floating-shape-left shape-left-top"></span>
+  <span class="floating-shape-left shape-left-bottom"></span>
           </div>
+          
         </div>
 
         <!-- Right: Image -->
@@ -171,6 +258,7 @@
 
           <span class="floating-shape shape-top"></span>
           <span class="floating-shape shape-bottom"></span>
+          
         </div>
       </div>
     </div>

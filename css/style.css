@@ -5,6 +5,7 @@
   --bs-link-color: #a4123f;
 }
 
+
 /* Checked form inputs */
 .form-check-input:checked {
     background-color: var(--bs-primary);
