@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Research</title>
+  <link rel="stylesheet" href="bootstrap-5.3.8/css/bootstrap.min.css">
+  <link rel="shortcut icon" href="assets/favicon-.ico">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    body {
+      background-color: #fff;
+      font-family: "Inter", sans-serif;
+    }
+
+    /* Navbar */
+    .navbar {
+      padding: 1rem 0;
+      border-bottom: 1px solid #eaeaea;
+    }
+
+    .navbar-brand p:first-child {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #a4123f;
+    }
+
+    .navbar-brand p:last-child {
+      font-size: 0.75rem;
+      color: #888;
+    }
+
+    .btn-primary-modern {
+      background: linear-gradient(135deg, #a4123f, #d2135a);
+      color: white;
+      border: none;
+      transition: all 0.3s;
+    }
+
+    .btn-primary-modern:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn-outline-modern {
+      border-color: #a4123f;
+      color: #a4123f;
+      transition: all 0.3s;
+    }
+
+    .btn-outline-modern:hover {
+      background: #a4123f;
+      color: #fff;
+    }
+
+    /* Hero Section */
+    .hero-section {
+      padding: 6rem 0;
+      position: relative;
+    }
+
+    .hero-section h1 {
+      font-size: 2.75rem;
+      line-height: 1.2;
+      font-weight: 700;
+    }
+
+    .hero-section p.lead {
+      font-size: 1.1rem;
+      color: #6c757d;
+    }
+
+    .hero-img {
+      max-height: 70vh;
+      object-fit: cover;
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+    }
+
+    .hero-img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Floating shapes */
+    .floating-shape {
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0.1;
+      z-index: 0;
+    }
+
+    .shape-top {
+      top: -20px;
+      left: 50%;
+      width: 60px;
+      height: 60px;
+      background-color: #a4123f;
+      transform: translateX(-50%);
+    }
+
+    .shape-bottom {
+      bottom: 20px;
+      right: 0;
+      width: 100px;
+      height: 100px;
+      background-color: #f1c40f;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <img src="assets/logo.png" class="d-none d-md-inline-block" alt="Logo" height="40">
+        <img src="assets/logo.png" class="d-md-none d-inline-block" alt="Logo" height="30">
+        <div class="lh-sm">
+          <p class="m-0 fw-semibold">MyResearch</p>
+          <p class="m-0 small">Research Portal</p>
+        </div>
+      </a>
+      <button class="btn btn-primary-modern rounded-pill px-4 py-2 fw-semibold d-none d-md-inline-flex">Staff Login</button>
+      <button class="btn btn-primary-modern rounded-pill px-4 py-2 fw-semibold d-inline-flex d-md-none" style="font-size: 12px;">Staff Login</button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Left: Text -->
+        <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
+          <h1>Advancing Knowledge <span class="text-primary">Through Research</span></h1>
+          <p class="lead">Join a community of researchers and innovators pushing the boundaries of science, technology, and discovery.</p>
+          <div class="d-flex gap-3 flex-wrap mt-4">
+            <a href="#explore" class="btn btn-primary-modern btn-lg rounded-pill px-4 shadow-sm">Explore Research</a>
+            <a href="#learn" class="btn btn-outline-modern btn-lg rounded-pill px-4 shadow-sm">Learn More</a>
+          </div>
+        </div>
+
+        <!-- Right: Image -->
+        <div class="col-lg-6 col-md-12 text-center position-relative">
+          <img src="assets/home1.png" alt="Research Illustration" class="hero-img">
+          <span class="floating-shape shape-top"></span>
+          <span class="floating-shape shape-bottom"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="bootstrap-5.3.8/js/bootstrap.bundle.min.js"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+
+</html>
