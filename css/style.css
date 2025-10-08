@@ -1,0 +1,66 @@
+:root {
+  /* Primary color overrides */
+  --bs-primary: #a4123f;
+  --bs-primary-rgb: 164, 18, 63;
+  --bs-link-color: #a4123f;
+}
+
+/* Checked form inputs */
+.form-check-input:checked {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+
+.form-check-input[type=checkbox]:indeterminate {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+    --bs-form-check-bg-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/%3e%3c/svg%3e");
+}
+
+/* Range sliders */
+.form-range::-webkit-slider-thumb {
+    background-color: var(--bs-primary);
+    border: 0;
+}
+
+.form-range::-moz-range-thumb {
+    background-color: var(--bs-primary);
+    border: 0;
+}
+
+/* Buttons */
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #c41e50; /* slightly darker */
+    --bs-btn-hover-border-color: #9e0e39;
+    --bs-btn-focus-shadow-rgb: 164, 18, 63;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #9e0e39;
+    --bs-btn-active-border-color: #9c0d37;
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: var(--bs-primary);
+    --bs-btn-disabled-border-color: var(--bs-primary);
+}
+
+.btn-outline-primary {
+    --bs-btn-color: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--bs-primary);
+    --bs-btn-hover-border-color: var(--bs-primary);
+    --bs-btn-focus-shadow-rgb: 164, 18, 63;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--bs-primary);
+    --bs-btn-active-border-color: var(--bs-primary);
+    --bs-btn-disabled-color: var(--bs-primary);
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: var(--bs-primary);
+}
+
+    .icon-small {
+      width: 16px;
+      height: 16px;
+    }
